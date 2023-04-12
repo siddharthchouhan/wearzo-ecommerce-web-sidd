@@ -1,0 +1,639 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+.nav1 {
+  background-color: black;
+  color: white;
+}
+
+.nav1 a {
+  color: white;
+}
+
+.nav1 a:hover {
+  color: lightgray;
+}
+
+#button1:hover {
+  color: red;
+}
+
+#drop2 {
+  background-color: black;
+  color: white;
+  padding-left: 0;
+  border-bottom: 3px solid orangered;
+}
+
+#drop2 li a {
+  padding: 0;
+  width: 0;
+  line-height: 40px;
+}
+
+#drop2 li a:hover {
+  color: orangered;
+  transition: 0.3s;
+}
+
+#drop1 li a {
+  padding: 0;
+  width: 0;
+  line-height: 40px;
+}
+
+#drop1 li a:hover {
+  color: orangered;
+  transition: 0.3s;
+}
+
+#drop1 {
+  background-color: black;
+  color: white;
+  border-bottom: 3px solid orangered;
+}
+
+.container-fluid img {
+  margin-left: 40px;
+  margin-right: 50px;
+}
+
+.container-fluid a {
+  font-size: 15px;
+  margin-left: 20px;
+  font-weight: 650;
+  text-transform: uppercase;
+}
+
+#searchbar {
+  margin-left: 10%;
+  background: none;
+}
+
+#searchbar input:focus {
+  outline: 1px solid orangered;
+}
+
+.fa-user {
+  color: black;
+  font-size: 25px;
+}
+
+.fa-user:hover {
+  color: orangered;
+  transition: 0.3s;
+}
+
+#userdrop {
+  text-align: left;
+  border-bottom: 2px solid orangered;
+}
+
+#userdrop li a:hover {
+  color: orangered;
+}
+
+#userdrop:hover {
+  color: orangered;
+  transition: 0.4s;
+}
+
+#user-drop:hover {
+  color: orangered;
+}
+
+#shop-drop span:hover {
+  color: orangered;
+  transition: 0.4s;
+}
+
+#cartdrop {
+  text-align: left;
+  border-bottom: 2px solid orangered;
+}
+
+#cartdrop li a:hover {
+  cursor: text;
+}
+
+#navbarmain li a:hover {
+  color: orangered;
+}
+
+.sidebar {
+  width: 15%;
+  margin-left: 2%;
+}
+
+.sidebar h2 {
+  margin-top: 6%;
+  text-transform: uppercase;
+  color: rgb(52, 52, 52);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sidebar hr {
+  width: 100%;
+}
+
+.fa-chevron-right {
+  font-size: 12px;
+  margin-top: 11px;
+}
+
+#btnfirst:focus {
+  border: none;
+}
+
+#btnfirst {
+  border: none;
+}
+
+#shopdrop {
+  position: relative;
+  text-align: left;
+  padding: 10px;
+  width: 500px;
+  height: 300px;
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#shopdrop2 {
+  position: absolute;
+  top: 3.5%;
+  left: 34%;
+}
+
+#shopdrop3 {
+  position: absolute;
+  top: 3.5%;
+  left: 65%;
+}
+
+#shopdrop span {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#shopdrop span:hover {
+  color: orangered;
+}
+
+#shopdrop hr {
+  width: 130px;
+}
+
+#trouserdrop {
+  position: relative;
+  text-align: left;
+  padding: 10px;
+  width: 180px;
+  height: 100px;
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#trouserdrop span {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#trouserdrop span:hover {
+  color: orangered;
+}
+
+#trouserdrop hr {
+  width: 130px;
+}
+
+#dressdrop {
+  position: relative;
+  text-align: left;
+  padding: 10px;
+  width: 180px;
+  height: 120px;
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#dressdrop span {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#dressdrop span:hover {
+  color: orangered;
+}
+
+#dressdrop hr {
+  width: 130px;
+}
+
+#imageslider {
+  width: 100%;
+  margin-top: 1%;
+}
+
+#middle {
+  display: flex;
+}
+
+#imagesection {
+  display: flex;
+  padding-top: 4%;
+  padding-left: 3%;
+  padding-right: 4%;
+  padding-bottom: 15%;
+  overflow: hidden;
+}
+
+.girlimg1 {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+
+.girlimg1 img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.4s ease;
+}
+
+.girlimg1 img:hover {
+  transform: scale(1.2);
+}
+
+.girlimg2 {
+  margin-left: 4%;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+
+.girlimg2 img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.4s ease;
+}
+
+.girlimg2 img:hover {
+  transform: scale(1.2);
+}
+
+.img1 {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-right: 3%;
+}
+
+.img2 {
+  width: 50%;
+  height: 450px;
+  margin-right: 3%;
+}
+
+.imagecardsection {
+  position: relative;
+}
+
+.imagecardcontainer {
+  position: relative;
+}
+
+#imagesectioncard1rel {
+  position: absolute;
+  left: 8%;
+  width: 100%;
+  margin-top: -23%;
+}
+
+#imagesectioncard1 {
+  background-color: white;
+  border-radius: 2%;
+  padding: 20%;
+}
+
+#imagesectioncard2rel {
+  position: absolute;
+  left: 57%;
+  width: 100%;
+  margin-top: -19.5%;
+}
+
+#imagesectioncard2 {
+  background-color: white;
+  border-radius: 2%;
+  padding: 20%;
+}
+
+.policycards {
+  display: flex;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.maincontainershopping {
+  display: flex;
+}
+
+.innercontent {
+  margin-top: 4%;
+  width: 70%;
+}
+
+.container2 {
+  width: 30%;
+  margin-left: 3%;
+  margin-top: 4.5%;
+  position: relative;
+  display: flex;
+}
+
+.container2 img {
+  width: 100%;
+  height: auto;
+}
+
+.innercontainer2 {
+  position: absolute;
+  display: flex;
+  bottom: 4%;
+  left: 9%;
+  background-color: white;
+  padding: 8px 35px;
+}
+
+.innercontainer2 h1 {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.innercontainerhead {
+  margin-left: 2%;
+  margin-top: 0;
+  margin-bottom: 2%;
+  display: inline-block;
+}
+
+.innercontainerhead h1 {
+  font-family: inherit;
+  font-size: 30px;
+}
+
+.innercontainercards {
+  display: flex;
+  height: 350px;
+}
+
+.midhr {
+  position: relative;
+  margin-top: 7%;
+  text-align: center;
+}
+
+.midhr hr {
+  background-color: gray;
+  color: gray;
+  border: 2px solid gray;
+  border-radius: 20px;
+  max-width: 1490px;
+  margin-left: 3%;
+}
+
+.midhr h1 {
+  font-family: arial;
+  color: rgb(33, 33, 33);
+  background-color: white;
+  font-weight: bold;
+  padding: 0px 80px;
+  position: absolute;
+  left: 36.3%;
+  margin-top: -2.5%;
+  cursor: pointer;
+}
+
+.midhr h1::after {
+  content: "";
+  position: absolute;
+  left: 19%;
+  height: 2px;
+  width: 0;
+  bottom: -10px;
+  background-color: red;
+  transition: all 0.2s;
+}
+
+.midhr h1::before {
+  content: "";
+  position: absolute;
+  right: 19%;
+  height: 2px;
+  width: 0;
+  bottom: -10px;
+  background-color: red;
+  transition: all 0.2s;
+}
+
+.midhr h1:hover {
+  color: red;
+  transition: 0.2s;
+}
+
+.midhr h1:hover::after {
+  width: 31.5%;
+}
+
+.midhr h1:hover::before {
+  width: 31.5%;
+}
+
+.card img:hover {
+  cursor: pointer;
+  opacity: 50%;
+  transition: 0.5s ease-in-out;
+}
+
+.blogsection {
+  margin-top: 5%;
+}
+
+.blogcards {
+  display: flex;
+  margin-left: 1%;
+}
+
+.bloghead {
+  margin-left: 2.6%;
+  margin-bottom: 2%;
+}
+
+.footer {
+  background-color: rgb(24, 24, 24);
+  height: 700px;
+  margin-left: -10%;
+}
+
+.footer hr {
+  color: white;
+  transform: rotate(90deg);
+  width: 400px;
+  margin-left: 30%;
+  margin-top: -12%;
+}
+
+.footercontact {
+  margin-left: 13%;
+  margin-top: -12%;
+  text-align: center;
+  color: white;
+}
+
+.footercontact h1 {
+  margin-bottom: 2%;
+  letter-spacing: 5px;
+}
+
+.contactinput {
+  position: relative;
+  margin-top: 3%;
+}
+
+.contactinput input {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 0;
+  width: 29%;
+  height: 55px;
+}
+
+.contactinput button {
+  position: absolute;
+  right: 36%;
+  top: 11%;
+  color: white;
+  background-color: rgb(24, 24, 24);
+  border: 2px solid rgb(24, 24, 24);
+  font-family: arial;
+  padding: 10px 27px;
+  border-radius: 0;
+  font-size: 13px;
+}
+
+.contactinput button:hover {
+  opacity: 90%;
+  transition: 0.2s;
+}
+
+.contactinput input:focus {
+  outline: none;
+}
+
+.contactinput input[placeholder] {
+  padding-left: 4%;
+}
+
+.fa-envelope {
+  position: absolute;
+  color: black;
+  margin-top: 1%;
+  font-size: 25px;
+  margin-left: 1.5%;
+}
+
+.footerlinks {
+  display: flex;
+  margin-left: 75%;
+  margin-top: -11%;
+}
+
+.link1 {
+  text-align: left;
+  margin-right: 15%;
+}
+
+.link1 a {
+  font-family: inherit;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.link1 a:hover{
+    color: orangered;
+}
+
+.link1 h1 {
+  color: white;
+  font-size: 18px;
+}
+
+.link2 a {
+  font-family: inherit;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.link2 a:hover{
+    color: orangered;
+}
+
+.link2 h1 {
+  color: white;
+  font-size: 20px;
+}
+
+.link2 h1 {
+  color: white;
+  font-size: 15px;
+}
+
+.footerbadges{
+    margin-left: 50%;
+    margin-top: 2%;
+}
+
+.fa-cc-visa{
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.fa-cc-visa:hover{
+    color: rgb(0, 136, 255);
+    transition: 0.2s;
+}
+
+.fa-paypal{
+    color: white;
+    font-size: 35px;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.fa-paypal:hover{
+    color: purple;
+    transition: 0.2s;
+}
+
+.fa-cc-mastercard{
+    color: white;
+    font-size: 35px;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.fa-cc-mastercard:hover{
+    color: rgb(0, 179, 255);
+    transition: 0.2s;
+}

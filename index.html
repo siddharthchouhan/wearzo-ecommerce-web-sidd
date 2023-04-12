@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Your Store</title>
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-T5m5WERuXcjgzF8DAb7tRkByEZQGcpraRTinjpywg37AO96WoYN9+hrhDVoM6CaT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <ul class="nav nav1 text-center pt-2 pb-2">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="#">Contact Us 24/7: 1234567890</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">FREE SHIPPING FOR ORDER OVER $150!
+      </a>
+    </li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-end bg-transparent border-0">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+          aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle bg-transparent border-0 pt-0
+                    " id="button1" data-bs-toggle="dropdown" aria-expanded="false">
+                Currency: USD
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" id="drop1">
+                <li><a class="dropdown-item text-center pl-0" href="#">Euro</a></li>
+                <li><a class="dropdown-item text-center pl-0" href="#">Pound Sterling</a></li>
+                <li><a class="dropdown-item text-center pl-0" href="#">US Dollar</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-end bg-transparent border-0">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <button class="btn btn-dark dropdown-toggle bg-transparent border-0 pt-0
+                    " id="button1" data-bs-toggle="dropdown" aria-expanded="false">
+                Language: ENG-GB
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" id="drop2">
+                <li><a class="dropdown-item text-center" href="#">English</a></li>
+                <li><a class="dropdown-item text-center" href="#">Arabic</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </ul>
+  <nav class="navbar navbar-expand-lg bg-body-white mt-3 mb-2">
+    <div class="container-fluid">
+      <img src="img/logo.png" alt="" height="40px" width="200px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" id="navbarmain">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Specials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Site Maps</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Brands</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+        </ul>
+        <nav class="navbar" id="searchbar">
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+        <div class="dropdown" id="user-drop">
+          <a class="btn btn-secondary bg-transparent border-0 text-dark display-1" href="#" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
+          </a>
+
+          <ul class="dropdown-menu" id="userdrop">
+            <li><a class="dropdown-item" href="#">Register</a></li>
+            <li><a class="dropdown-item" href="#">Login</a></li>
+            <li><a class="dropdown-item" href="#">Wishlist(0)</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle  bg-transparent border-0 text-dark display-1" id="shop-drop"
+            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span>
+              <i class="fa-solid fa-bag-shopping"></i>
+              (0)Items
+            </span>
+          </a>
+
+          <ul class="dropdown-menu" id="cartdrop">
+            <li><a class="dropdown-item" href="#">Your Shopping Cart Is Empty!</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="middle">
+    <div class="sidebar">
+      <hr>
+      <h2>Shop By Catagory</h2>
+      <div class="btn-group dropend">
+        <button type="button" id="btnfirst" class="btn btn-white" data-bs-toggle="dropdown" aria-expanded="false">
+          <span style="font-size: 14px;"> Shop </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <ul class="dropdown-menu" id="shopdrop">
+          <div id="shopdrop1">
+            <span> Kurtas </span>
+            <hr>
+            <span>Midi Kurta</span> <br>
+            <span>Printed Kurta</span> <br>
+            <span>Floral Kurta</span> <br>
+            <span>Accessories</span> <br>
+            <hr>
+            <span>Purse</span> <br>
+            <span>Scarf</span> <br>
+            <span>Watches</span> <br>
+          </div>
+          <div id="shopdrop2">
+            <span>Tops</span>
+            <hr>
+            <span>Badot Top</span> <br>
+            <span>Embroidered Shirt</span> <br>
+            <span>Shoulder Strap Crop Top</span> <br>
+            <span>Tights</span> <br>
+            <hr>
+            <span>Print Sport Tights</span> <br>
+            <span>Solid Tights</span> <br>
+            <span>Sport Tights</span> <br>
+          </div>
+          <div id="shopdrop3">
+            <span>Trousers</span> <br>
+            <hr>
+            <span>Checkered Trouser</span> <br>
+            <span>Loose Trouser</span> <br>
+            <span>Tribal Print Wide Leg Pants</span> <br>
+          </div>
+        </ul>
+      </div> <br>
+      <div class="btn-group dropend">
+        <button type="button" id="btnfirst" class="btn btn-white" data-bs-toggle="dropdown" aria-expanded="false">
+          <span style="font-size: 14px;"> Trousers </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <ul class="dropdown-menu" id="trouserdrop">
+          <div id="shopdrop4">
+            <span>Checkered Trouser</span> <br>
+            <span>Loose Trouser</span> <br>
+            <span>Tribal Print Wide Leg Pants</span> <br>
+          </div>
+        </ul>
+      </div> <br>
+      <div class="btn-group dropend">
+        <button type="button" id="btnfirst" class="btn btn-white" data-bs-toggle="dropdown" aria-expanded="false">
+          <span style="font-size: 14px;"> Tops </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <ul class="dropdown-menu" id="trouserdrop">
+          <div id="shopdrop4">
+            <span>Badot Top</span> <br>
+            <span>Embroidered Shirt</span> <br>
+            <span>Shoulder Strap Crop Top</span> <br>
+          </div>
+        </ul>
+      </div> <br>
+      <div class="btn-group dropend">
+        <button type="button" id="btnfirst" class="btn btn-white" data-bs-toggle="dropdown" aria-expanded="false">
+          <span style="font-size: 14px;"> Tights </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <ul class="dropdown-menu" id="trouserdrop">
+          <div id="shopdrop4">
+            <span>Print Sport Tights</span> <br>
+            <span>Solid Tights</span> <br>
+            <span>Sport Tights</span> <br>
+          </div>
+        </ul>
+      </div> <br>
+      <div class="btn-group dropend">
+        <button type="button" id="btnfirst" class="btn btn-white" data-bs-toggle="dropdown" aria-expanded="false">
+          <span style="font-size: 14px;"> Dresses </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <ul class="dropdown-menu" id="dressdrop">
+          <div id="shopdrop4">
+            <span>Flare Dress</span> <br>
+            <span>Mini Dress</span> <br>
+            <span>Patter Dress</span> <br>
+            <span>Skater Dress</span> <br>
+          </div>
+        </ul>
+      </div> <br>
+      <div class="btn-group dropend">
+        <button type="button" id="btnfirst" class="btn btn-white" data-bs-toggle="dropdown" aria-expanded="false">
+          <span style="font-size: 14px;"> Fashion </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <ul class="dropdown-menu" id="dressdrop">
+          <div id="shopdrop4">
+            <span>co-Ord Sets</span> <br>
+            <span>Partywear Dress</span> <br>
+            <span>Printed T-shirts</span> <br>
+            <span>Skirts</span> <br>
+          </div>
+        </ul>
+      </div> <br>
+      <div class="btn-group dropend">
+        <button type="button" id="btnfirst" class="btn btn-white" data-bs-toggle="dropdown" aria-expanded="false">
+          <span style="font-size: 14px;"> Twisted Mini Drop </span>
+        </button>
+      </div> <br>
+      <div class="btn-group dropend">
+        <button type="button" id="btnfirst" class="btn btn-white" data-bs-toggle="dropdown" aria-expanded="false">
+          <span style="font-size: 14px;"> V-neck Maxi Dress </span>
+        </button>
+      </div> <br>
+      <div class="btn-group dropend">
+        <button type="button" id="btnfirst" class="btn btn-white" data-bs-toggle="dropdown" aria-expanded="false">
+          <span style="font-size: 14px;"> Tights </span>
+        </button>
+      </div>
+      <div id="sidebarsocial">
+        <i style="color: rgb(93, 0, 255); font-size: 16px; margin-top: 10%; cursor: pointer;"
+          class="fa-brands fa-facebook"></i>
+        <i style="color: rgb(0, 132, 255); font-size: 16px; margin-left: 7%; cursor: pointer;"
+          class="fa-brands fa-twitter"></i>
+        <i style="color: rgb(255, 34, 0); font-size: 16px; margin-left: 7%; cursor: pointer;"
+          class="fa-brands fa-youtube"></i>
+        <i style="color: rgb(255, 34, 0); font-size: 16px; margin-left: 7%; cursor: pointer;"
+          class="fa-brands fa-google-plus-g"></i>
+        <i style="color: rgb(255, 34, 0); font-size: 16px; margin-left: 7%; cursor: pointer;"
+          class="fa-brands fa-pinterest-p"></i>
+      </div>
+    </div>
+    <div id="imageslider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="imageslider1">
+          <img style="cursor: pointer" src="img/banner2.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+        <div class="carousel-item" id="imageslider2">
+          <img style="cursor: pointer" src="img/banner1.jpg" class="d-block w-100 h-100" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="imagecardsection">
+    <div id="imagesection">
+      <div class="girlimg1">
+        <img src="img/girl1.jpg" class="img1" alt="">
+      </div>
+      <div class="girlimg2">
+        <img src="img/girl2.jpg" class="img2" alt="">
+      </div>
+    </div>
+
+    <div class="imagecardcontainer">
+      <div class="mb-3 position-relative bg-white" id="imagesectioncard1rel" style="max-width: 540px;">
+        <div class="row g-0 shadow p-3 mb-5 bg-white rounded" id="imagesectioncard1">
+          <div class="col-md-4">
+            <img src="img/girl3.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-center">PINK HANDBAG</h5>
+              <p class="card-text pt-3 text-center">Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit
+              </p>
+              <h1 class="card-title text-center">$315.00</h1>
+              <div class="text-center mt-4">
+                <button class="btn btn-dark rounded-0 w-20">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-3 position-relative bg-white" id="imagesectioncard2rel" style="max-width: 540px;">
+        <div class="row g-0 shadow p-3 mb-5 bg-white rounded" id="imagesectioncard2">
+          <div class="col-md-4">
+            <img src="img/girl4.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-center">SUNGLASSES </h5>
+              <p class="card-text pt-3 text-center">Cum sociis natoque peibus et magnis parturien. Lorem ipsum dolor sit
+              </p>
+              <h1 class="card-title text-center">$350.00</h1>
+              <div class="text-center mt-4">
+                <button class="btn btn-dark rounded-0">SHOP NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="policycards">
+    <div class="card text-center rounded-0" style="width: 21rem; height: 200px; padding: 2%; margin-left: 3%;">
+      <i class="fa-solid fa-truck-fast text-danger h1"></i>
+      <div class="card-body">
+        <h5 class="card-title">FREE SHIPPING</h5>
+        <p class="card-text">Order Over $100</p>
+      </div>
+    </div>
+
+    <div class="card text-center rounded-0" style="width: 21rem; height: 200px; padding: 2%; margin-left: 3%;">
+      <i class="fa-solid fa-rotate-left text-danger h1"></i>
+      <div class="card-body">
+        <h5 class="card-title">FREE RETURN</h5>
+        <p class="card-text">Within 30 Days</p>
+      </div>
+    </div>
+
+    <div class="card text-center rounded-0" style="width: 21rem; height: 200px; padding: 2%; margin-left: 3%;">
+      <i class="fa-solid fa-lock text-danger h1"></i>
+      <div class="card-body">
+        <h5 class="card-title">100% SECURE</h5>
+        <p class="card-text">Online Shopping</p>
+      </div>
+    </div>
+
+    <div class="card text-center rounded-0" style="width: 21rem; height: 200px; padding: 2%; margin-left: 3%;">
+      <i class="fa-solid fa-headphones text-danger h1"></i>
+      <div class="card-body">
+        <h5 class="card-title">ONLINE SUPPORT</h5>
+        <p class="card-text">Call Us 24/7</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="maincontainershopping">
+    <div class="container2">
+      <img src="img/girl5.jpg" alt="...">
+      <div class="innercontainer2">
+        <h1>Stylish Shirts</h1>
+        <button class="btn btn-dark rounded-0">SHOP NOW</button>
+      </div>
+    </div>
+    <div class="innercontent">
+      <div class="innercontainerhead">
+        <h1>NEW PRODUCTS</h1>
+      </div>
+      <div class="innercontainercards">
+        <div class="card text-center border-0" style="width: 16.5rem;">
+          <img src="img/girl6.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+
+        <div class="card text-center border-0" style="width: 16rem;">
+          <img src="img/girl7.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+
+        <div class="card text-center border-0" style="width: 16rem;">
+          <img src="img/girl8.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+
+        <div class="card text-center border-0" style="width: 16.9rem;">
+          <img src="img/girl9.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="innercontainercards">
+        <div class="card text-center border-0" style="width: 16.5rem;">
+          <img src="img/girl10.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+
+        <div class="card text-center border-0" style="width: 16rem;">
+          <img src="img/girl11.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+
+        <div class="card text-center border-0" style="width: 16rem;">
+          <img src="img/girl12.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+
+        <div class="card text-center border-0" style="width: 16.9rem;">
+          <img src="img/girl13.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="midhr">
+    <hr>
+    <a href="#111">
+      <h1>BESTSELLER</h1>
+    </a>
+  </div>
+
+  <div class="innercontainercards" id="111" style="margin-top: 4%;">
+    <div class="card text-center border-0" style="width: 20rem;">
+      <img src="img/girl10.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Two Piece Dress</h5>
+        <p class="card-text">$241.99</p>
+      </div>
+    </div>
+
+    <div class="card text-center border-0" style="width: 19.7rem;">
+      <img src="img/girl11.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Two Piece Dress</h5>
+        <p class="card-text">$241.99</p>
+      </div>
+    </div>
+
+    <div class="card text-center border-0" style="width: 19.7rem;">
+      <img src="img/girl12.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Two Piece Dress</h5>
+        <p class="card-text">$241.99</p>
+      </div>
+    </div>
+
+    <div class="card text-center border-0" style="width: 19.7rem;">
+      <img src="img/girl13.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Two Piece Dress</h5>
+        <p class="card-text">$241.99</p>
+      </div>
+    </div>
+
+    <div class="card text-center border-0" style="width: 19.7rem;">
+      <img src="img/girl13.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Two Piece Dress</h5>
+        <p class="card-text">$241.99</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="maincontainershopping" style="flex-direction: row-reverse; margin-top: 5%;">
+    <div class="container2" style="margin-left: 0;margin-right: 3%;">
+      <img src="img/girl14.jpg" style="margin-right: 50px;" alt="...">
+      <div class="innercontainer2">
+        <h1>Jeans Jacket</h1>
+        <button class="btn btn-dark rounded-0">SHOP NOW</button>
+      </div>
+    </div>
+    <div class="innercontent" style="width: 65%;">
+      <div class="innercontainerhead" style="margin-bottom: 1%;">
+        <h1>SPECIAL PRODUCTS</h1>
+      </div>
+      <div class="innercontainercards">
+        <div class="card text-center border-0" style="width: 16.5rem;">
+          <img src="img/girl6.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+
+        <div class="card text-center border-0" style="width: 16rem;">
+          <img src="img/girl7.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+
+        <div class="card text-center border-0" style="width: 16rem;">
+          <img src="img/girl8.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+
+        <div class="card text-center border-0" style="width: 16.9rem;">
+          <img src="img/girl9.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="innercontainercards">
+        <div class="card text-center border-0" style="width: 16.5rem;">
+          <img src="img/girl10.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+
+        <div class="card text-center border-0" style="width: 16rem;">
+          <img src="img/girl11.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+
+        <div class="card text-center border-0" style="width: 16rem;">
+          <img src="img/girl12.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+
+        <div class="card text-center border-0" style="width: 16.9rem;">
+          <img src="img/girl13.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Two Piece Dress</h5>
+            <p class="card-text">$241.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blogsection">
+    <div class="bloghead">
+      <h1>LATEST BLOG</h1>
+    </div>
+    <div class="blogcards">
+      <div class="card text-center border-0" style="width: 24rem;">
+        <img src="img/blog4.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+        <div class="card-body">
+          <p class="card-text">April 06, 2022</p>
+          <h5 class="card-title">Lorem ipsum dolor sit amet consectetur.</h5>
+        </div>
+      </div>
+
+      <div class="card text-center border-0" style="width: 24rem;">
+        <img src="img/blog1.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+        <div class="card-body">
+          <p class="card-text">April 06, 2022</p>
+          <h5 class="card-title">Lorem ipsum dolor sit amet consectetur.</h5>
+        </div>
+      </div>
+
+      <div class="card text-center border-0" style="width: 24rem;">
+        <img src="img/blog2.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+        <div class="card-body">
+          <p class="card-text">April 06, 2022</p>
+          <h5 class="card-title">Lorem ipsum dolor sit amet consectetur.</h5>
+        </div>
+      </div>
+
+      <div class="card text-center border-0" style="width: 24rem;">
+        <img src="img/blog3.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
+        <div class="card-body">
+          <p class="card-text">April 06, 2022</p>
+          <h5 class="card-title">Lorem ipsum dolor sit amet consectetur.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div id="carouselExampleSlidesOnly" style="margin-left: 3%;" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active d-flex">
+        <img src="img/logo1.png" class="d-block w-10" alt="...">
+        <img src="img/logo2.png" class="d-block w-10" style="margin-left: 8%;" alt="...">
+        <img src="img/logo3.png" class="d-block w-10" style="margin-left: 8%;" alt="...">
+        <img src="img/logo4.png" class="d-block w-10" style="margin-left: 8%;" alt="...">
+        <img src="img/logo5.png" class="d-block w-10" style="margin-left: 8%;" alt="...">
+        <img src="img/logo6.png" class="d-block w-10" style="margin-left: 8%;" alt="...">
+        <img src="img/logo7.png" class="d-block w-10" style="margin-left: 8%;" alt="...">
+        <img src="img/logo8.png" class="d-block w-10" style="margin-left: 8%;" alt="...">
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="footer">
+      <div id="carouselExampleIndicators" class="carousel slide" style="width: 40%;">
+        <div class="carousel-indicators" style="margin-left: 40%;">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="margin-left: 3%;">
+          <div class="carousel-item active text-center">
+            <div class="card text-center border-0" style="width: 50rem; background-color: transparent;">
+              <h4
+                style="color: rgba(255, 255, 255, 0.455); margin-top: 100px; margin-bottom: 5%; text-transform: uppercase;">
+                Our client Says</h4>
+              <img src="img/client1.jpg" class="card-img-top rounded-0"
+                style="margin-left: 45%; width: 10%; margin-bottom: 25px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color: white; font-size: 15px;">Excellent Company! Good Work, On Time! and
+                  I Looked Forward <br> Working With Them On My Next Project</h5>
+                <h5 class="card-title" style="color: white; font-size: 20px; margin-top: 5%;">Micheal Jack</h5>
+                <p class="card-text" style="color: rgb(95, 95, 95); margin-bottom: 6%;">customer</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active text-center">
+            <div class="card text-center border-0" style="width: 50rem; background-color: transparent;">
+              <h4
+                style="color: rgba(255, 255, 255, 0.455); margin-top: 100px; margin-bottom: 5%; text-transform: uppercase;">
+                Our client Says</h4>
+              <img src="img/client2.jpg" class="card-img-top rounded-0"
+                style="margin-left: 45%; width: 10%; margin-bottom: 25px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color: white; font-size: 15px;">Excellent Company! Good Work, On Time! and
+                  I Looked Forward <br> Working With Them On My Next Project</h5>
+                <h5 class="card-title" style="color: white; font-size: 20px; margin-top: 5%;">Micheal Jack</h5>
+                <p class="card-text" style="color: rgb(95, 95, 95); margin-bottom: 6%;">customer</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active text-center">
+            <div class="card text-center border-0" style="width: 50rem; background-color: transparent;">
+              <h4
+                style="color: rgba(255, 255, 255, 0.455); margin-top: 100px; margin-bottom: 5%; text-transform: uppercase;">
+                Our client Says</h4>
+              <img src="img/client3.jpg" class="card-img-top rounded-0"
+                style="margin-left: 45%; width: 10%; margin-bottom: 25px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color: white; font-size: 15px;">Excellent Company! Good Work, On Time! and
+                  I Looked Forward <br> Working With Them On My Next Project</h5>
+                <h5 class="card-title" style="color: white; font-size: 20px; margin-top: 5%;">Micheal Jack</h5>
+                <p class="card-text" style="color: rgb(95, 95, 95); margin-bottom: 6%;">customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <!-- <span class="carousel-control-prev-icon" style="color: black;" aria-hidden="true"></span> -->
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <hr>
+      <div class="footercontact">
+        <h1>WEARZO</h1>
+        <p>2548 Broaddus Maple Court Avenue, Madisonville KY 4783, <br> USA</p>
+        <p>0123-456-789, 123-456-7890</p>
+        <p>demo@yourstore.com</p>
+        <div class="contactinput">
+          <i class="fa-regular fa-envelope"></i>
+          <input type="text" placeholder="Enter e-mail here..">
+          <button>SUBSCRIBE</button>
+        </div>
+      </div>
+      <hr style="margin-left: 60%; margin-top: -7%">
+      <div class="footerlinks">
+        <div class="link1">
+          <h1>INFORMATION</h1> <br> <br>
+          <a href="#">About Us</a> <br> <br>
+          <a href="#">Delivery <br> Information</a> <br> <br>
+          <a href="#">Privacy Policy</a> <br> <br>
+          <a href="#">Terms & Condition</a> <br> <br>
+          <a href="#">Contact Us</a> <br> <br>
+        </div>
+        <div class="link2">
+          <h1>MY ACCOUNT</h1> <br> <br>
+          <a href="#">My Account</a> <br> <br>
+          <a href="#">Order History</a> <br> <br>
+          <a href="#">Wish List</a> <br> <br>
+          <a href="#">Newsletter</a> <br> <br>
+          <a href="#">Return</a> <br> <br>
+        </div>
+      </div>
+      <hr style="transform: rotate(180deg); width: 100%; margin-left: 0; margin-top: 4%;">
+      <div class="footerbadges">
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-paypal"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <p style="color: white; margin-left: -6%; margin-top: 3%; font-weight: bold; font-family: inherit;">Powered By SiddWeb Your Dev. @2023</p>
+      </div>
+    </div>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        type = "text/javascript"
+        src = "https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+      </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
