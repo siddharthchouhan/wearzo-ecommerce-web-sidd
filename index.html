@@ -62,6 +62,52 @@
         </div>
       </div>
     </nav>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-danger text-light mt-2" style="padding: 0px 40px; height: 30px" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Login
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0 p-20" style="margin-left: 90%;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-dark" style="background-color: transparent; margin-top: -4%;">
+        <div class="modal modal-sheet position-static d-block" tabindex="-1" role="dialog" id="modalSignin">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+              <div class="modal-header p-5 pb-4 border-bottom-0" style="margin-left: 7%;">
+                <h1 class="fw-bold">Sign up for free</h1>
+              </div>
+        
+              <div class="modal-body">
+                <form class="">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" style="margin-right: 70%;">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword" style="margin-right: 77%;">Password</label>
+                  </div>
+                  <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                  <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+                  <hr class="my-4">
+                  <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                  <a target="_blank" href="https://twitter.com/login" class="w-100 py-2 mb-2 btn text-dark btn-outline-secondary rounded-3">Sign up with Twitter</a>
+                  <a target="_blank" href="https://facebook.com/login" class="w-100 py-2 mb-2 btn text-dark btn-outline-primary rounded-3">Sign up with Facebook</a>
+                  <a target="_blank" href="https://github.com/login" class="w-100 py-2 mb-2 btn text-dark btn-outline-secondary rounded-3">Sign up with Github</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   </ul>
   <nav class="navbar navbar-expand-lg bg-body-white mt-3 mb-2">
     <div class="container-fluid">
@@ -79,7 +125,7 @@
             <a class="nav-link" href="#">Specials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Site Maps</a>
@@ -88,7 +134,7 @@
             <a class="nav-link" href="#">Brands</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blogs</a>
+            <a class="nav-link" href="#blogs">Blogs</a>
           </li>
         </ul>
         <nav class="navbar" id="searchbar">
@@ -277,7 +323,7 @@
     </div>
   </div>
 
-  <div class="imagecardsection">
+  <div class="imagecardsection reveal">
     <div id="imagesection">
       <div class="girlimg1">
         <img src="img/girl1.jpg" class="img1" alt="">
@@ -329,7 +375,7 @@
   </div>
 
 
-  <div class="policycards">
+  <div class="policycards reveal">
     <div class="card text-center rounded-0" style="width: 21rem; height: 200px; padding: 2%; margin-left: 3%;">
       <i class="fa-solid fa-truck-fast text-danger h1"></i>
       <div class="card-body">
@@ -363,7 +409,7 @@
     </div>
   </div>
 
-  <div class="maincontainershopping">
+  <div class="maincontainershopping reveal">
     <div class="container2">
       <img src="img/girl5.jpg" alt="...">
       <div class="innercontainer2">
@@ -454,7 +500,7 @@
     </a>
   </div>
 
-  <div class="innercontainercards" id="111" style="margin-top: 4%;">
+  <div class="innercontainercards reveal" id="111" style="margin-top: 4%;">
     <div class="card text-center border-0" style="width: 20rem;">
       <img src="img/girl10.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
       <div class="card-body">
@@ -496,7 +542,7 @@
     </div>
   </div>
 
-  <div class="maincontainershopping" style="flex-direction: row-reverse; margin-top: 5%;">
+  <div class="maincontainershopping reveal" style="flex-direction: row-reverse; margin-top: 5%;">
     <div class="container2" style="margin-left: 0;margin-right: 3%;">
       <img src="img/girl14.jpg" style="margin-right: 50px;" alt="...">
       <div class="innercontainer2">
@@ -571,7 +617,7 @@
 
         <div class="card text-center border-0" style="width: 16.9rem;">
           <img src="img/girl13.jpg" class="card-img-top rounded-0" style="margin-left: 10%; width: 80%;" alt="...">
-          <div class="card-body">
+          <div class="card-body" id="blogs">
             <h5 class="card-title">Two Piece Dress</h5>
             <p class="card-text">$241.99</p>
           </div>
@@ -580,7 +626,7 @@
     </div>
   </div>
 
-  <div class="blogsection">
+  <div class="blogsection reveal">
     <div class="bloghead">
       <h1>LATEST BLOG</h1>
     </div>
@@ -627,7 +673,7 @@
   <br>
   <br>
 
-  <div id="carouselExampleSlidesOnly" style="margin-left: 3%;" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleSlidesOnly" style="margin-left: 3%;" class="carousel slide reveal" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active d-flex">
         <img src="img/logo1.png" class="d-block w-10" alt="...">
@@ -647,7 +693,7 @@
     <br>
 
 
-    <div class="footer">
+    <div class="footer" id="contact">
       <div id="carouselExampleIndicators" class="carousel slide" style="width: 40%;">
         <div class="carousel-indicators" style="margin-left: 40%;">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -720,7 +766,9 @@
         <h1>WEARZO</h1>
         <p>2548 Broaddus Maple Court Avenue, Madisonville KY 4783, <br> USA</p>
         <p>0123-456-789, 123-456-7890</p>
+        <!-- <a href="tel:+919929575952">Call</a> <br> -->
         <p>demo@yourstore.com</p>
+        <!-- <a href="mailto:siddharth1345chouhan@gmailcom">E-Mail</a> -->
         <div class="contactinput">
           <i class="fa-regular fa-envelope"></i>
           <input type="text" placeholder="Enter e-mail here..">
@@ -765,6 +813,27 @@
         src = "https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
       </script>
     <script src="script.js"></script>
+
+    <script>
+      window.addEventListener('scroll', reveal);
+      function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+          }
+          else{
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
+    </script>
 </body>
 
 </html>
